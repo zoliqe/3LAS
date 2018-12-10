@@ -77,7 +77,7 @@ if (isAndroid && isNativeChrome)
 else if (isAndroid && isFirefox)
     AudioFormatReader_WAV.prototype._BatchLength = 96 / 375;
 else
-    AudioFormatReader_WAV.prototype._BatchLength = 6 / 375;
+    AudioFormatReader_WAV.prototype._BatchLength = 32 / 375;
 
 // Length of addtional samples to decode to account for edge effects
 if (isAndroid && isNativeChrome)
